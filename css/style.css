@@ -1,0 +1,73 @@
+:root {
+    --dark-color: rgba(39, 10, 38, 0.849);
+    --medium-color: rgba(83, 45, 82, 0.6);
+    --light-color: rgba(214, 158, 174, 0.4);
+    --text-color: rgba(214, 205, 214);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 2rem;
+    color: var(--light-color)
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right , var(--medium-color), var(--light-color)),
+    url('../img/pexels-parich-sitthichai-4030818.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+}
+ .logo-box{
+     position: absolute;
+     top: 6%;
+     left: 3%;
+ }
+
+ .logo{
+     height: 1.7rem;
+ }
+
+ .text-box{
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .heading-primary{
+     text-transform: uppercase;
+ }
+
+ .heading-primary-main {
+     display: block;
+     font-size: 5rem;
+     letter-spacing: 1.3rem;
+     animation-name: moveInleft;
+     animation-duration: 3s;
+ }
+
+ @keyframes moveInleft {
+     0% {
+         transform: translateX(-100px);
+         opacity: 0;
+    }
+
+    80% {
+        transform: translateX(20px);
+
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
